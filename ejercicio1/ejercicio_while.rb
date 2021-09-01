@@ -26,7 +26,7 @@ while monto !=  -1
     puts "ingrese ventas"
     monto = gets.chomp
 
-    if monto.include? "a" or monto.include? "b" or monto.include? "c"or monto.include? "d"or monto.include? "e"or monto.include? "f"or monto.include? "g"or monto.include? "h"or monto.include? "i"or monto.include? "j"or monto.include? "k"or monto.include? "l"or monto.include? "m"or monto.include? "n"or monto.include? "ñ"or monto.include? "o"or monto.include? "p"or monto.include? "q"or monto.include? "r"or monto.include? "s"or monto.include? "t"or monto.include? "u"or monto.include? "v"or monto.include? "w"or monto.include? "x"or monto.include? "y"or monto.include? "z"
+    if monto.include? "a" or monto.include? "b" or monto.include? "c" or monto.include? "d" or monto.include? "e" or monto.include? "f" or monto.include? "g" or monto.include? "h" or monto.include? "i" or monto.include? "j" or monto.include? "k" or monto.include? "l" or monto.include? "m" or monto.include? "n" or monto.include? "ñ" or monto.include? "o" or monto.include? "p" or monto.include? "q" or monto.include? "r" or monto.include? "s" or monto.include? "t" or monto.include? "u" or monto.include? "v" or monto.include? "w" or monto.include? "x" or monto.include? "y" or monto.include? "z"
         puts "#{monto} no es un número"
     else 
         monto = monto.to_i
