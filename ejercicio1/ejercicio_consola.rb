@@ -13,3 +13,5 @@ puts "tienes #{edad} años"
 puts "¿dónde vives? 🏠"
 vivienda = gets.chomp
 puts "¿qué tal #{vivienda}? "
+
+
