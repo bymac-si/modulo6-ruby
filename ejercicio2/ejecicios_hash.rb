@@ -19,21 +19,53 @@ equipos = [
     equipo8, 
     equipo9, 
     equipo10 ]
-i=0
+# i=0
 
-puts "Países diponibles".center(20)
-equipos.each_with_index do |equipo,index|
-puts "#{index+1} \t #{equipo[:nombre]}"
+# puts "Países diponibles".center(20)
+# equipos.each_with_index do |equipo,index|
+# puts "#{index+1} \t #{equipo[:nombre]}"
+# end
+# puts "===".center(20, "=")
+
+# puts "ingrese el número de lpaís local"
+# local = gets.chomp.to_i
+# puts "ingrese el número del país visita"
+# visita = gets.chomp.to_i
+
+# partido = {}
+# partido[:local] = equipos[local-1][:nombre]
+# partido[:visitante] = equipos[visita-1][:nombre]
+# partido[:estadio] = equipos[local-1][:estadio]
+# puts partido
+
+#3. sorteo
+
+# elegir = rand (0..equipos.count)
+# puts equipos[elegir][:nombre]
+# nuevalista = equipos.reject {|equipos|[elegir]|}
+# numeros_sorteo =[]
+# for i in 0..9
+#     sorteo = rand(0..9)
+#     while numeros_sorteo.any? sorteo
+#     sorteo = rand(0..9)
+#     end
+#     numeros_sorteo.push sorteo
+# end
+# puts "Partidos por la Fecha #{rand(1..16)}".center(30, "⚽️")
+# i = 0
+# while i<10
+#      pos_equipo_local = numeros_sorteo[i]
+#      pos_equipo_visitante = numeros_sorteo [i+1]
+#      puts "#{equipos[pos_equipo_local][:nombre]} 🆚 #{equipos[pos_equipo_visitante][:nombre]}"
+#     i += 2
+    
+# end
+
+#metodos
+
+equipos.shuffle!
+for i in 1..5
+    equipo_local = equipos.shift
+    equipo_visitante = equipos.pop
+    puts "#{equipo_local[:nombre]} 🆚 #{equipo_visitante[:nombre]} "
 end
-puts "===".center(20, "=")
-
-puts "ingrese el número de lpaís local"
-local = gets.chomp.to_i
-puts "ingrese el número del país visita"
-visita = gets.chomp.to_i
-
-partido = {}
-partido[:local] = equipos[local-1][:nombre]
-partido[:visitante] = equipos[visita-1][:nombre]
-partido[:estadio] = equipos[local-1][:estadio]
-puts partido
