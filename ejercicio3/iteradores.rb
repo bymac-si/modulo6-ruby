@@ -35,13 +35,13 @@ numeros = [69, 6043, 2407, 6825, 3078, 4605, 8158, 1597, 4341, 6717, 7476, 2868,
 
 resultado = numeros.select {|n| n.to_s.start_with? "7" or n.to_s.end_with? "7"}
 # puts resultado
-if File.exist?("./ejercicio3/resultado.txt")
-    File.open("./ejercicio3/resultado.txt","a") do |file|
+if File.exist?("/Users/marcoscastroabarca/modulo6/ejercicio3/resultado.txt")
+    File.open("/Users/marcoscastroabarca/modulo6/ejercicio3/resultado.txt","a") do |file|
         file.write(resultado, "\n")
         file.write(" Fin array nuevo \n")
     end
 else
-    File.open("./ejercicio3/resultado.txt","w") do |file|
+    File.open("/Users/marcoscastroabarca/modulo6/ejercicio3/resultado.txt","w") do |file|
         file.write(resultado , "\n")
         file.write( "Fin Array \n")
     end
