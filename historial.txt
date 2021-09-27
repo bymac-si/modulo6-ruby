@@ -1,0 +1,4 @@
+El historial es: ["Saldo Inicial", "abono de: 1000000", "retiro de: 1000"] 
+El historial es: ["Saldo Inicial", "abono de: 345000", "retiro de: 100"] 
+El historial es: 68311, ["Saldo Inicial", "abono de: 1", "retiro de: 1"] 
+El historial es: 64642, ["Saldo Inicial", "abono de: 3", "retiro de: 3"] 
